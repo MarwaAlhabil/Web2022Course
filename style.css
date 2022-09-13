@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ 
+  background-color:black;
+  color:white;
+  display: grid;
+  place-items: center;
+}
+.app-vedio{
+
+    position: relative;
+    height: 600px;
+    background-color: black;
+    overflow: scroll;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+    scroll-snap-type: y mandatory;
+
+}
+.app-vedio::-webkit-scrollbar{
+    display: none;
+}
+.vedio{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    scroll-snap-align: start;
+}
+.vedio-player{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    position: relative;
+    bottom: 130px;
+    margin-left: 20px;
+}
+
+
+
+@keyframes rotate{
+
+    from{
+
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(350deg);
+
+    }
+
+
+}
+.image-play{
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    animation: rotate infinite 3s linear;
+}
+
+
+
+.footer-text{
+    flex: 1;
+}
+.footer-text h3{
+    padding-bottom: 30px;
+}
+.img-marq{
+    display: flex;
+    align-items: center;
+    width: 390px;
+}
+.img-marq img{
+    width: 43px;
+    margin-top: 4px;
+}
+.img-marq marquee{
+    margin-left: 3px;
+    margin-top: 13px;
+    width: 65%;
+}
+
+.img-marq .image-plays{
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 65%;
+}
+
+
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+
+.container{
+    width: 70%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
+}
